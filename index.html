@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Главная страница веб студии</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <a href="/">WebStudio </a>
-        <ul>
-          <li><a href="http://">Студия</a></li>
-          <li><a href="http://">Портфолио</a></li>
-          <li><a href="http://">Контакты</a></li>
+        <ul class="list">
+          <li class="item"><a class="link" href="#">Студия</a></li>
+          <li class="item"><a class="link" href="#">Портфолио</a></li>
+          <li class="item"><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="">info@devstudio.com</a></li>
-        <li><a href="">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
@@ -54,47 +54,72 @@
         <h2>Чем мы занимаемся</h2>
         <ul>
           <li>
-            <img src="./images/what_we_do-1.jpeg" alt="верстка сайтов" width="370" height="294" />
+            <img
+              src="./images/what-we-do/what_we_do-1.jpeg"
+              alt="верстка сайтов"
+              width="370"
+              height="294"
+            />
           </li>
           <li>
             <img
-              src="./images/what_we_do-2.jpeg"
+              src="./images/what-we-do/what_we_do-2.jpeg"
               alt="разработка мобильных приложений"
               width="370"
               height="294"
             />
           </li>
           <li>
-            <img src="./images/what_we_do-3.jpeg" alt="дизайн сайтов" width="370" height="294" />
+            <img
+              src="./images/what-we-do/what_we_do-3.jpeg"
+              alt="дизайн сайтов"
+              width="370"
+              height="294"
+            />
           </li>
         </ul>
       </section>
-      <section>
+      <section class="team">
         <h2>Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="list">
+          <li class="member-item">
             <img
+              class="member-img"
               src="./images/team/team_member-1.jpeg"
               alt="Игорь Демьяненко"
               width="270"
               height="260"
             />
+            <div class="member-group">
+              <h3 class="member-title">Игорь Демьяненко</h3>
+              <p class="member-position" lang="en">Product Designer</p>
+            </div>
           </li>
-          <li>
+          <li class="member-item">
             <img
+              class="member-img"
               src="./images/team/team_member-2.jpeg"
               alt="Ольга Репина"
               width="270"
               height="260"
             />
+            <div class="member-group">
+              <h3 class="member-title">Ольга Репина</h3>
+              <p class="member-position" lang="en">Frontend Developer</p>
+            </div>
           </li>
-          <li>
+          <li class="member-item">
             <img
+              class="member-img"
               src="./images/team/team_member-3.jpeg"
               alt="Николай Тарасов"
               width="270"
               height="260"
             />
+            <div class="member-group">
+              <h3 class="member-title">Николай Тарасов</h3>
+              <p class="member-position" lang="en">Marketing</p>
+            </div>
           </li>
           <li>
             <img
@@ -103,10 +128,21 @@
               width="270"
               height="260"
             />
+            <div class="member-group">
+              <h3 class="member-title">Михаил Ермаков</h3>
+              <p class="member-position" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <a href="/">WebStudio </a>
+      <address>
+        г. Киев, пр-т Леси Украинки, 26 <br />
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+        <a href="tel:380961111111">+38 096 111 11 11</a>
+      </address>
+    </footer>
   </body>
 </html>
